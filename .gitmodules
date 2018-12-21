@@ -1,0 +1,3 @@
+[submodule "app/www-project"]
+	path = app/www-project
+	url = git@github.com:SamiKoh/www-project.git
