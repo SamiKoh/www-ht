@@ -1,3 +1,3 @@
-[submodule "app/www-project"]
-	path = app/www-project
+[submodule "app/frontend"]
+	path = app/frontend
 	url = git@github.com:SamiKoh/www-project.git

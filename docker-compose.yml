@@ -1,7 +1,7 @@
-version: '3.1'
+version: "3.1"
 services:
   app:
-    container_name: "mongo_app"
+    container_name: "my_app"
     build: ./app
     ports:
       - 3000:3000
@@ -19,7 +19,7 @@ services:
     command: mongod --smallfiles --logpath=/data/log/mongo.log
   monitor:
     image: mongo-express:latest
-    links: 
+    links:
       - mongo:mongo
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongo
