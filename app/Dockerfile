@@ -1,4 +1,4 @@
-FROM NODE:8
+FROM node:8
 
 EXPOSE 3000
 
@@ -8,9 +8,9 @@ COPY package*.json ./
 
 RUN npm install
 
-RUN npm --prefix ./frontend install ./frontend
-RUN npm --prefix ./frontend run build ./frontend
-
 COPY . .
+
+#RUN npm --prefix ./frontend install ./frontend
+#RUN npm --prefix ./frontend run build
 
 CMD [ "npm", "start" ]
