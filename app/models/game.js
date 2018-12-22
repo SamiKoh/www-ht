@@ -1,4 +1,4 @@
-var mongoose = require("mongoose");
+/* var mongoose = require("mongoose"); */
 var GameSchema = new mongoose.Schema({
   winnerMarker: {
     type: String

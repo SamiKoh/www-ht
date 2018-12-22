@@ -10,7 +10,7 @@ RUN npm install
 
 COPY . .
 
-#RUN npm --prefix ./frontend install ./frontend
-#RUN npm --prefix ./frontend run build
+RUN npm --prefix ./frontend install ./frontend
+RUN npm --prefix ./frontend run build
 
 CMD [ "npm", "start" ]

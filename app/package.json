@@ -24,7 +24,10 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "mongoose": "^5.4.0"
+    "fs": "0.0.1-security",
+    "markdown-pdf": "^9.0.0",
+    "mongoose": "^5.4.0",
+    "require-text": "0.0.1"
   },
   "devDependencies": {
     "express-reload": "^1.1.0"

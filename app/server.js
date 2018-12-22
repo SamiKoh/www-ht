@@ -2,7 +2,7 @@
 
 /* Global imports to avoid the pain of require */
 global.express = require("express");
-globa.mongoose = require("mongoose");
+global.mongoose = require("mongoose");
 
 const bodyParser = require("body-parser");
 const app = express();
@@ -31,7 +31,8 @@ mongoose.connect("mongodb://mongo:27017/local");
 
 /* Routers */
 app.use("/api/gameresults", require("./routes/gameresults"));
-app.use("api/users", require("./routes/users"));
+app.use("/api/users", require("./routes/users"));
+app.use("/api/about", require("./routes/about"));
 
 /* just some test routes */
 app.get("/api", (req, res) => {
