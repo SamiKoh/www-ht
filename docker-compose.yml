@@ -7,8 +7,6 @@ services:
       - 3000:3000
     links:
       - mongo:mongo
-    volumes:
-      - ./app:/usr/src/app
   mongo:
     image: mongo:latest
     container_name: "mongo"
