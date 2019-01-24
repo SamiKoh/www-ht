@@ -10,11 +10,9 @@ services:
   mongo:
     image: mongo:latest
     container_name: "mongo"
-    volumes:
-      - ./db/log:/data/log
     ports:
       - 27017:27017
-    command: mongod --smallfiles --logpath=/data/log/mongo.log
+    command: mongod --smallfiles
   monitor:
     image: mongo-express:latest
     links:
